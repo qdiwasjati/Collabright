@@ -27,8 +27,6 @@ function App() {
         <Hero onShop={scrollToShop} />
         <Marquee />
         <ProblemGrid />
-        <SocialProof />
-        <UgcReels />
         <Ingredients />
         <BeforeAfter />
         <HowItWorks />
@@ -39,7 +37,6 @@ function App() {
           onAdd={onAdd}
         />
         <FlashSale stockLeft={t.stockLeft} stockTotal={t.stockTotal} paymentUrl={t.paymentUrl} />
-        <Reviews />
         <Bundle paymentUrl={t.paymentUrl} />
         <Faq />
         <section className="section">
