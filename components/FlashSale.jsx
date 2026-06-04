@@ -36,7 +36,7 @@ function FlashSale({ stockLeft = 43, stockTotal = 100, paymentUrl }) {
                 <div className="flash__bar"><i style={{width: `${pct}%`}} /></div>
               </div>
               <div className="flash__progress-label">Sisa stok hari ini · {stockLeft} pcs</div>
-              <a href={paymentUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary">
+              <a href={paymentUrl} className="btn btn--primary">
                 Checkout Sekarang <Icon name="arrow" size={14} stroke="#fff" />
               </a>
             </div>

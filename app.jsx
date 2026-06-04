@@ -45,7 +45,7 @@ function App() {
               <div className="cta-banner__inner">
                 <h2>Glow balik <span className="gradient">dimulai sekarang</span></h2>
                 <p>Bergabung dengan 12.000+ Gen Z yang udah ketemu glow-nya. Stok terbatas — hari ini diskon 29%.</p>
-                <a href={t.paymentUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--xl">
+                <a href={t.paymentUrl} className="btn btn--primary btn--xl">
                   Beli Colla Bright Sekarang ✨
                 </a>
               </div>

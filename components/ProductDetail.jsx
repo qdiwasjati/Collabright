@@ -74,12 +74,9 @@ function ProductDetail({ priceNow, priceWas, paymentUrl, onAdd }) {
               <span style={{fontSize:12, color:'var(--fg-3)'}}>Stok terbatas — 43 tersisa</span>
             </div>
             <div className="pdp__cta-row">
-              <a href={paymentUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--lg" style={{flex: 1}}>
+              <a href={paymentUrl} className="btn btn--primary btn--lg btn--block">
                 Beli Sekarang <Icon name="arrow" size={16} stroke="#fff" />
               </a>
-              <button className="btn btn--secondary btn--lg" onClick={() => onAdd?.(qty)}>
-                <Icon name="cart" size={16} /> Add to Cart
-              </button>
             </div>
             <div className="pdp__guarantee">
               <Icon name="shield" size={14} /> Garansi 100% Ori · Tidak Cocok? Uang Kembali

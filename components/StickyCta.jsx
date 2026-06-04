@@ -15,7 +15,7 @@ function StickyCta({ priceNow, priceWas, paymentUrl, enabled }) {
         <span className="was">{priceWas}</span>
         <small>Gratis ongkir · COD tersedia</small>
       </div>
-      <a href={paymentUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary sticky-cta__btn">
+      <a href={paymentUrl} className="btn btn--primary sticky-cta__btn">
         Beli Sekarang
       </a>
     </div>

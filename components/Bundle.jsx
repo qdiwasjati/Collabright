@@ -24,7 +24,7 @@ function Bundle({ paymentUrl }) {
                 <b>Rp 78.000</b>
                 Hemat Rp 20.000
               </div>
-              <a href={paymentUrl} target="_blank" rel="noopener noreferrer" className="btn btn--primary btn--lg btn--block">
+              <a href={paymentUrl} className="btn btn--primary btn--lg btn--block">
                 Ambil Bundle-nya <Icon name="arrow" size={16} stroke="#fff" />
               </a>
               <div style={{display:'flex', justifyContent:'space-around', fontSize:11, color:'var(--ink-soft)'}}>
