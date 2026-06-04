@@ -2,8 +2,7 @@
 const { useState, useEffect } = React;
 
 function App() {
-  const tw = useTweaks(window.SITE_DEFAULTS);
-  const t = tw.values;
+  const [t, setTweak] = useTweaks(window.SITE_DEFAULTS);
 
   // Apply body-level data-attrs for theme/density/animations/hero
   useEffect(() => {
@@ -62,7 +61,7 @@ function App() {
             label="Payment URL"
             value={t.paymentUrl}
             placeholder="https://checkout..."
-            onChange={(v) => tw.setTweak('paymentUrl', v)}
+            onChange={(v) => setTweak('paymentUrl', v)}
           />
         </TweakSection>
 
@@ -71,7 +70,7 @@ function App() {
             label="Layout"
             value={t.heroVariant}
             options={[{ value: 'split', label: 'Split' }, { value: 'centered', label: 'Centered' }]}
-            onChange={(v) => tw.setTweak('heroVariant', v)}
+            onChange={(v) => setTweak('heroVariant', v)}
           />
         </TweakSection>
 
@@ -85,31 +84,31 @@ function App() {
               { value: 'lilac',    label: 'Lilac' },
               { value: 'mint',     label: 'Mint accent' },
             ]}
-            onChange={(v) => tw.setTweak('themeTint', v)}
+            onChange={(v) => setTweak('themeTint', v)}
           />
           <TweakRadio
             label="Density"
             value={t.density}
             options={[{value:'tight',label:'Tight'},{value:'cozy',label:'Cozy'},{value:'airy',label:'Airy'}]}
-            onChange={(v) => tw.setTweak('density', v)}
+            onChange={(v) => setTweak('density', v)}
           />
           <TweakToggle
             label="Animations"
             value={t.animations}
-            onChange={(v) => tw.setTweak('animations', v)}
+            onChange={(v) => setTweak('animations', v)}
           />
           <TweakToggle
             label="Sticky bottom CTA (mobile)"
             value={t.stickyCta}
-            onChange={(v) => tw.setTweak('stickyCta', v)}
+            onChange={(v) => setTweak('stickyCta', v)}
           />
         </TweakSection>
 
         <TweakSection label="Pricing">
-          <TweakText label="Price (now)" value={t.priceNow} onChange={(v) => tw.setTweak('priceNow', v)} />
-          <TweakText label="Price (was)" value={t.priceWas} onChange={(v) => tw.setTweak('priceWas', v)} />
-          <TweakNumber label="Stock left" value={t.stockLeft} min={0} max={t.stockTotal} onChange={(v) => tw.setTweak('stockLeft', v)} />
-          <TweakNumber label="Stock total" value={t.stockTotal} min={1} max={500} onChange={(v) => tw.setTweak('stockTotal', v)} />
+          <TweakText label="Price (now)" value={t.priceNow} onChange={(v) => setTweak('priceNow', v)} />
+          <TweakText label="Price (was)" value={t.priceWas} onChange={(v) => setTweak('priceWas', v)} />
+          <TweakNumber label="Stock left" value={t.stockLeft} min={0} max={t.stockTotal} onChange={(v) => setTweak('stockLeft', v)} />
+          <TweakNumber label="Stock total" value={t.stockTotal} min={1} max={500} onChange={(v) => setTweak('stockTotal', v)} />
         </TweakSection>
       </TweaksPanel>
     </div>
