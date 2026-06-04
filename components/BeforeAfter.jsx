@@ -53,7 +53,7 @@ function BeforeAfter() {
           <div>
             <span className="eyebrow">✦ Real testing ✦</span>
             <h2 className="section-title">Geser & lihat <span className="accent">perubahannya</span></h2>
-            <p className="section-sub">Hasil dari Devina, 23 — pemakaian rutin 2 minggu, 3x seminggu. Foto belum diedit, lighting natural.</p>
+            <p className="section-sub">Pemakaian rutin 2 minggu, 3x seminggu dapat mencerahkan kulit secara natural</p>
             <div className="ba__metrics">
               <div className="ba-metric">
                 <div className="ba-metric__num">+87%</div>

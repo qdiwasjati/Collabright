@@ -6,7 +6,6 @@ function Faq() {
     { q: 'Aman buat ibu hamil & menyusui?', a: 'Bahan-bahan kami general-safe, tapi setiap kondisi berbeda. Kami selalu rekomendasikan konsultasi dulu dengan dokter kandungan kamu sebelum pakai produk skincare apapun.' },
     { q: 'Cara pemakaian yang benar?', a: '1) Bersihkan kulit. 2) Oleskan tipis dan merata. 3) Diamkan 10-15 menit (jangan sampai kering total). 4) Bilas dengan air hangat. Pakai 2-3x seminggu untuk hasil optimal.' },
     { q: 'Berapa lama isi 1 sachet bertahan?', a: 'Untuk full body application, 1 sachet (50 gr) cukup untuk 4-5x pemakaian. Untuk area tertentu (lengan/kaki saja), bisa sampai 8-10x pemakaian.' },
-    { q: 'Bisa COD dan refund?', a: 'Bisa! Kami support COD ke seluruh Indonesia. Garansi uang kembali 100% kalau kamu gak cocok dalam 14 hari pemakaian — no questions asked.' },
   ];
   const [open, setOpen] = React.useState(0);
   return (
