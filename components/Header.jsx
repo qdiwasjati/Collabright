@@ -14,8 +14,6 @@ function Header({ cartCount = 1 }) {
           <a href="#faq">FAQ</a>
         </nav>
         <div className="hdr__icons">
-          <button className="hdr__icon-btn" aria-label="Search"><Icon name="search" size={18} /></button>
-          <button className="hdr__icon-btn" aria-label="Account"><Icon name="user" size={18} /></button>
           <button className="hdr__icon-btn hdr__cart" aria-label="Cart">
             <Icon name="cart" size={18} />
             {cartCount > 0 && <span className="hdr__cart-badge">{cartCount}</span>}

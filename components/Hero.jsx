@@ -6,9 +6,6 @@ function Hero({ onShop }) {
       <span className="sparkle sparkle--3">✦</span>
       <div className="container hero__inner">
         <div className="hero__copy">
-          <span className="hero__badge">
-            <Icon name="bolt" size={14} stroke="#e83a86" /> VIRAL DI TIKTOK · 12 JT VIEWS
-          </span>
           <h1 className="hero__title">
             Kulit kusam?<br />
             <span className="gradient">Glow balik</span> dalam{' '}
