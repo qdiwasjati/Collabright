@@ -13,30 +13,6 @@ function Footer() {
               <a href="#" aria-label="YouTube"><Icon name="youtube" size={18} /></a>
             </div>
           </div>
-          <div className="footer__col">
-            <h4>Shop</h4>
-            <ul>
-              <li>Body Mask</li>
-              <li>Bundling</li>
-              <li>Coming Soon</li>
-              <li>Track Order</li>
-            </ul>
-          </div>
-          <div className="footer__col">
-            <h4>About</h4>
-            <ul>
-              <li>Brand Story</li>
-              <li>Ingredients</li>
-              <li>Press & Media</li>
-              <li>Sustainability</li>
-            </ul>
-          </div>
-          <div className="footer__col footer__newsletter">
-            <h4>Stay in the loop</h4>
-            <input type="email" placeholder="email kamu nih ✨" />
-            <button className="btn btn--primary btn--block">Subscribe</button>
-            <p style={{fontSize: 11, color:'var(--fg-3)', marginTop: 8}}>Dapet diskon 10% untuk pembelian pertama 💕</p>
-          </div>
         </div>
         <div className="footer__bottom">
           <span>© 2025 Colla Bright. Made with 💕 in Jakarta.</span>
