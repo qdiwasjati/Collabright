@@ -2,7 +2,7 @@ function ProductDetail({ priceNow, priceWas, paymentUrl, onAdd }) {
   const [qty, setQty] = React.useState(1);
   const [active, setActive] = React.useState(0);
   const thumbs = [
-    'assets/product-main.jpg',
+    'assets/EB641AD7-BACA-4182-8046-A1F6BEC47F54.png',
     'assets/photo-pack-flatlay.jpg',
     'assets/photo-two-packs.jpg',
     'assets/photo-cream-hand.jpg',

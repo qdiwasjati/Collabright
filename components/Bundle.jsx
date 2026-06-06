@@ -14,9 +14,9 @@ function Bundle({ paymentUrl }) {
               <p>2 PCS Colla Bright. Kulit hemat, hasil maksimal! Bonus pouch eksklusif.</p>
             </div>
             <div className="bundle__visual">
-              <div className="bundle__pack"><img src="assets/product-main.jpg" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
+              <div className="bundle__pack"><img src="assets/EB641AD7-BACA-4182-8046-A1F6BEC47F54.png" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
               <span className="bundle__plus">+</span>
-              <div className="bundle__pack"><img src="assets/product-main.jpg" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
+              <div className="bundle__pack"><img src="assets/EB641AD7-BACA-4182-8046-A1F6BEC47F54.png" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
             </div>
             <div className="bundle__cta">
               <div className="bundle__price">
