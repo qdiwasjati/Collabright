@@ -2,32 +2,26 @@ function ProductDetail({ priceNow, priceWas, paymentUrl, onAdd }) {
   const [qty, setQty] = React.useState(1);
   const [active, setActive] = React.useState(0);
   const thumbs = [
+    'assets/product-main.jpg',
     'assets/photo-pack-flatlay.jpg',
     'assets/photo-two-packs.jpg',
     'assets/photo-cream-hand.jpg',
-    'assets/photo-arm-shimmer.jpg',
   ];
   return (
     <section className="section pdp" id="shop" data-screen-label="07 Product Detail">
       <div className="container">
         <div className="pdp__row">
           <div className="pdp__gallery">
-            {active === 0
-              ? <img src="assets/logo.svg" alt="Colla Bright sachet" />
-              : <img src={thumbs[active]} alt="Product photo" style={{width:'100%', height:'100%', objectFit:'cover', borderRadius:18}} />
-            }
+            <img src={thumbs[active]} alt="Product photo" style={{width:'100%', height:'100%', objectFit:'cover', borderRadius:18}} />
             <div className="pdp__thumbs">
-              {[null, ...thumbs.slice(1)].map((src, i) => (
+              {thumbs.map((src, i) => (
                 <button
                   key={i}
                   className={`pdp__thumb ${active === i ? 'is-active' : ''}`}
                   onClick={() => setActive(i)}
                   aria-label={`View image ${i + 1}`}
                 >
-                  {i === 0
-                    ? <div style={{width:'100%', height:'100%', background:'var(--grad-holo)', display:'flex', alignItems:'center', justifyContent:'center'}}><img src="assets/logo.svg" alt="" style={{width:'70%'}} /></div>
-                    : <img src={src} alt="" />
-                  }
+                  <img src={src} alt="" />
                 </button>
               ))}
             </div>
@@ -61,7 +55,7 @@ function ProductDetail({ priceNow, priceWas, paymentUrl, onAdd }) {
             <div className="pdp__price-row">
               <span className="now">{priceNow}</span>
               <span className="was">{priceWas}</span>
-              <span className="pdp__discount">HEMAT 29%</span>
+              <span className="pdp__discount">HEMAT 30%</span>
             </div>
             <p className="pdp__shipping">Gratis ongkir Jabodetabek · COD tersedia · Kirim hari ini sebelum 14:00</p>
             <div className="pdp__qty">

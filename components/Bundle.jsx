@@ -5,7 +5,7 @@ function Bundle({ paymentUrl }) {
         <div className="bundle">
           <div className="bundle__hemat">
             HEMAT
-            <b>20%</b>
+            <b>44%</b>
           </div>
           <div className="bundle__row">
             <div className="bundle__copy">
@@ -14,15 +14,15 @@ function Bundle({ paymentUrl }) {
               <p>2 PCS Colla Bright. Kulit hemat, hasil maksimal! Bonus pouch eksklusif.</p>
             </div>
             <div className="bundle__visual">
-              <div className="bundle__pack"><img src="assets/logo.svg" alt="Colla Bright" /></div>
+              <div className="bundle__pack"><img src="assets/product-main.jpg" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
               <span className="bundle__plus">+</span>
-              <div className="bundle__pack"><img src="assets/logo.svg" alt="Colla Bright" /></div>
+              <div className="bundle__pack"><img src="assets/product-main.jpg" alt="Colla Bright" style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:12}} /></div>
             </div>
             <div className="bundle__cta">
               <div className="bundle__price">
-                <s>Rp 98.000</s>
-                <b>Rp 78.000</b>
-                Hemat Rp 20.000
+                <s>Rp 198.000</s>
+                <b>Rp 110.000</b>
+                Hemat Rp 88.000
               </div>
               <a href={paymentUrl} className="btn btn--primary btn--lg btn--block">
                 Ambil Bundle-nya <Icon name="arrow" size={16} stroke="#fff" />
