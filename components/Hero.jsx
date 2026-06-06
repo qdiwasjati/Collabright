@@ -22,9 +22,6 @@ function Hero({ onShop }) {
             <button className="btn btn--primary btn--lg" onClick={onShop}>
               Cobain Sekarang <Icon name="arrow" size={16} stroke="#fff" />
             </button>
-            <button className="btn btn--secondary btn--lg">
-              Lihat Hasilnya
-            </button>
           </div>
           <div className="hero__features">
             <div className="hero__feat">
